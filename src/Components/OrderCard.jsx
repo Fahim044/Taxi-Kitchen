@@ -1,9 +1,9 @@
 import { UtensilsCrossed } from 'lucide-react';
 import React from 'react';
 
-const OrderCard = ({order}) => {
+const OrderCard = ({order,handleOrder}) => {
     return (
-        <div className='rounded-2xl p-4 shadow-2xl '>
+        <div onClick={()=>handleOrder(order)} className='rounded-2xl p-4 shadow-2xl cursor-pointer'>
             {/* order no+table no. */}
             <div className='flex justify-between items-center'>
                 <p className='bg-amber-400 rounded-3xl p-2'>#{order.order_no}</p>
