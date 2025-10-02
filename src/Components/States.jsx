@@ -14,7 +14,7 @@ const States = ({currentOrders,cookingOrder,servingOrder}) => {
                 </div>
                 </div>
             </div>
-            {/* Currently Cooking */}
+            {/*Currently Cooking */}
            <div className='border-4 border-dotted border-amber-500 rounded-2xl p-5 '>
                 <div className='flex justify-between items-center'>
                     <Heater className='animate-pulse' color='#fcb700' size={100} />
