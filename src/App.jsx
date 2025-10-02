@@ -1,6 +1,6 @@
 
 import './App.css'
-import Logo from './Components/Logo'
+import Heading from './Components/Heading'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -10,6 +10,9 @@ function App() {
      <nav className='w-11/12 mx-auto py-3'>
       <Navbar></Navbar>
      </nav>
+     <header>
+      <Heading title="Kitchen">Room</Heading>
+     </header>
      
     </>
   )
