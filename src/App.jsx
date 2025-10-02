@@ -2,6 +2,7 @@
 import './App.css'
 import Heading from './Components/Heading'
 import Navbar from './Components/Navbar'
+import States from './Components/States'
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
      <header>
       <Heading title="Kitchen">Room</Heading>
      </header>
-     
+     <section>
+      <States></States>
+     </section>
     </>
   )
 }
