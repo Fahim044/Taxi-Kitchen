@@ -3,6 +3,7 @@ import OrderCard from './OrderCard';
 import CookingOrder from './CookingOrder';
 import ServeOrder from './ServeOrder';
 import States from './States';
+import { toast } from 'react-toastify';
 
 const OrdersContainer = ({promise}) => {
     const data= use(promise);
@@ -16,7 +17,7 @@ const handleOrder=(order)=>{
     const isExist=cookingOrder.find(item=>item.id==order.id);
      if(isExist)
     {
-        alert('Already Cooking!');
+        toast.error('Order Already on processing!');
         return;
     }
     const newCookingOrder=[...cookingOrder,order];
