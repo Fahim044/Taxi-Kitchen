@@ -3,7 +3,6 @@ import { Suspense } from 'react'
 import './App.css'
 import Heading from './Components/Heading'
 import Navbar from './Components/Navbar'
-import States from './Components/States'
 import OrdersContainer from './Components/OrdersContainer'
 
 const loadOrders=()=>fetch('/orders.json').then(res=>res.json());
@@ -21,7 +20,7 @@ const ordersPromise=loadOrders();
       <Heading title="Kitchen">Room</Heading>
      </header>
      <section>
-      <States></States>
+      
       <Suspense fallback={<h1>Loading...</h1>}>
     <OrdersContainer promise={ordersPromise}></OrdersContainer>
       </Suspense>
